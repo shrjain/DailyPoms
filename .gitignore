@@ -1,0 +1,7 @@
+# macOS / Xcode machine files (not project content)
+.DS_Store
+**/.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/

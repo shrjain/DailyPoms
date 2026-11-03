@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2AC833FD13D3B36E8AF132 /* TabSwipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79ECEA0C69BF1ACCCD6024B /* TabSwipeUITests.swift */; };
+		387056EC1C7228C1C6C43A5C /* DailyPomsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D351A56F30920C54FE78254 /* DailyPomsApp.swift */; };
+		40487022DBA7B2A0FE8CB7E0 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0206A85128B1D4E0301F9F /* SharedStore.swift */; };
+		4325D47FCB2E7CC5F7987088 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2905216207B8B510E63A411D /* PrivacyInfo.xcprivacy */; };
+		48D3D3E6C55D67D05D9E10CA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B088BE1309594188A94C9 /* SettingsView.swift */; };
+		4F11C6D9B4AFA1838C3E3C37 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EAF59765F4C035A6902C12 /* Models.swift */; };
+		53A6D20CF7ED0427D428EBED /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E2EF4DD2D0EE5DAB61251 /* Stats.swift */; };
+		70C42B3A1E39ED07A7D65381 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB662E6009C279569911E0 /* HistoryView.swift */; };
+		735BD4D6913E18B2AEA13278 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05387AF789FCBB7A268CC8FA /* ContentView.swift */; };
+		779B9C37374897D29AD93384 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0663E02891B0AB17571FF7E4 /* Notifications.swift */; };
+		7B1739F4ECF8E165A3E7A78D /* DailyPomsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC399E70203796C52956082F /* DailyPomsWidget.swift */; };
+		A0DB056D9EEDFDA02CE66A68 /* DailyPomsWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6227E04957857384B0A48585 /* DailyPomsWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACA35F81DF680AEA67B0A733 /* TodaySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1426477A0F04B80433FEDB /* TodaySnapshot.swift */; };
+		AEB8ABDC6C63B7644FA0036A /* StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418D48C35F0AF3DAEF1ED1A /* StatsTests.swift */; };
+		C5CAA1CB3493FA6BBD093DC5 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A3E1D7288F30293BA728 /* TodayView.swift */; };
+		CB9F5E0FC5A7593C6BDA0CAD /* TodaySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1426477A0F04B80433FEDB /* TodaySnapshot.swift */; };
+		E015C4C0789AAA0E64FE432B /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04FB82B25E9797DD97BD15 /* AppLinks.swift */; };
+		E406EB997CDBE46FE97CD57F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 30FB42CCA7D156D613A65DB5 /* PrivacyInfo.xcprivacy */; };
+		EA152CBBE42E26793AD75AAF /* SnapshotRolloverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F578B5894D026073ABA06FD5 /* SnapshotRolloverTests.swift */; };
+		F3B5A1E21038B28209F7495D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2856107B27BBAA53EAD21 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4126FE563C09BA2F09D75B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E75E1DBC76EF5E018AD77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F931E0F2165936A35300164B;
+			remoteInfo = DailyPoms;
+		};
+		41F7130BC507BF84AC2BFF4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E75E1DBC76EF5E018AD77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F931E0F2165936A35300164B;
+			remoteInfo = DailyPoms;
+		};
+		DB0F67873CDA02B939C3843A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E75E1DBC76EF5E018AD77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B293BAA42DEAF5B333684EA7;
+			remoteInfo = DailyPomsWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F6F144575F5D08D8600B299 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A0DB056D9EEDFDA02CE66A68 /* DailyPomsWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0418D48C35F0AF3DAEF1ED1A /* StatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTests.swift; sourceTree = "<group>"; };
+		05387AF789FCBB7A268CC8FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0663E02891B0AB17571FF7E4 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		0D351A56F30920C54FE78254 /* DailyPomsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPomsApp.swift; sourceTree = "<group>"; };
+		19B35C3FDB40127AB6BAD99F /* DailyPomsUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DailyPomsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2905216207B8B510E63A411D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		30FB42CCA7D156D613A65DB5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		31F70D50736478C5136A56F2 /* DailyPoms.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DailyPoms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EB662E6009C279569911E0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		43414381769D54B202B1968B /* DailyPoms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyPoms.entitlements; sourceTree = "<group>"; };
+		478B088BE1309594188A94C9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4FF2856107B27BBAA53EAD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580640ACD94CF16008ECBFD6 /* DailyPomsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyPomsWidget.entitlements; sourceTree = "<group>"; };
+		5F0206A85128B1D4E0301F9F /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		6227E04957857384B0A48585 /* DailyPomsWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DailyPomsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EAF59765F4C035A6902C12 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		6C5D2414212F912BDB39F61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84B5A3E1D7288F30293BA728 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		ACDFB89F9F035DBC3AEE24BC /* DailyPomsTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DailyPomsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA04FB82B25E9797DD97BD15 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
+		D4A2790761AAD3EC004CE47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E00E2EF4DD2D0EE5DAB61251 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		E79ECEA0C69BF1ACCCD6024B /* TabSwipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwipeUITests.swift; sourceTree = "<group>"; };
+		EC1426477A0F04B80433FEDB /* TodaySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySnapshot.swift; sourceTree = "<group>"; };
+		EC399E70203796C52956082F /* DailyPomsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPomsWidget.swift; sourceTree = "<group>"; };
+		F578B5894D026073ABA06FD5 /* SnapshotRolloverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotRolloverTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1E81187F701C0255FF9BD5D9 = {
+			isa = PBXGroup;
+			children = (
+				C12AC3739927F7ED3FB46F75 /* DailyPoms */,
+				225CA89AE2978B54D7217CFC /* DailyPomsTests */,
+				431DB2E4EB193DB3E533E865 /* DailyPomsUITests */,
+				DD19D1A1846357C32289160A /* DailyPomsWidget */,
+				2644F8C8B748421E23365526 /* Shared */,
+				DD204A0D1AD70E0596724BE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		225CA89AE2978B54D7217CFC /* DailyPomsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F578B5894D026073ABA06FD5 /* SnapshotRolloverTests.swift */,
+				0418D48C35F0AF3DAEF1ED1A /* StatsTests.swift */,
+			);
+			path = DailyPomsTests;
+			sourceTree = "<group>";
+		};
+		2644F8C8B748421E23365526 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC1426477A0F04B80433FEDB /* TodaySnapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		431DB2E4EB193DB3E533E865 /* DailyPomsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E79ECEA0C69BF1ACCCD6024B /* TabSwipeUITests.swift */,
+			);
+			path = DailyPomsUITests;
+			sourceTree = "<group>";
+		};
+		C12AC3739927F7ED3FB46F75 /* DailyPoms */ = {
+			isa = PBXGroup;
+			children = (
+				CA04FB82B25E9797DD97BD15 /* AppLinks.swift */,
+				4FF2856107B27BBAA53EAD21 /* Assets.xcassets */,
+				05387AF789FCBB7A268CC8FA /* ContentView.swift */,
+				43414381769D54B202B1968B /* DailyPoms.entitlements */,
+				0D351A56F30920C54FE78254 /* DailyPomsApp.swift */,
+				41EB662E6009C279569911E0 /* HistoryView.swift */,
+				6C5D2414212F912BDB39F61E /* Info.plist */,
+				65EAF59765F4C035A6902C12 /* Models.swift */,
+				0663E02891B0AB17571FF7E4 /* Notifications.swift */,
+				2905216207B8B510E63A411D /* PrivacyInfo.xcprivacy */,
+				478B088BE1309594188A94C9 /* SettingsView.swift */,
+				5F0206A85128B1D4E0301F9F /* SharedStore.swift */,
+				E00E2EF4DD2D0EE5DAB61251 /* Stats.swift */,
+				84B5A3E1D7288F30293BA728 /* TodayView.swift */,
+			);
+			path = DailyPoms;
+			sourceTree = "<group>";
+		};
+		DD19D1A1846357C32289160A /* DailyPomsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				580640ACD94CF16008ECBFD6 /* DailyPomsWidget.entitlements */,
+				EC399E70203796C52956082F /* DailyPomsWidget.swift */,
+				D4A2790761AAD3EC004CE47C /* Info.plist */,
+				30FB42CCA7D156D613A65DB5 /* PrivacyInfo.xcprivacy */,
+			);
+			path = DailyPomsWidget;
+			sourceTree = "<group>";
+		};
+		DD204A0D1AD70E0596724BE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F70D50736478C5136A56F2 /* DailyPoms.app */,
+				ACDFB89F9F035DBC3AEE24BC /* DailyPomsTests.xctest */,
+				19B35C3FDB40127AB6BAD99F /* DailyPomsUITests.xctest */,
+				6227E04957857384B0A48585 /* DailyPomsWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED9B55A9B9433852004DA60 /* DailyPomsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85518622A7528ADE0868EE68 /* Build configuration list for PBXNativeTarget "DailyPomsTests" */;
+			buildPhases = (
+				DBD1AB9D0B9ED34A659B4818 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D664BFE7E9CCDCDE402BF93 /* PBXTargetDependency */,
+			);
+			name = DailyPomsTests;
+			packageProductDependencies = (
+			);
+			productName = DailyPomsTests;
+			productReference = ACDFB89F9F035DBC3AEE24BC /* DailyPomsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B293BAA42DEAF5B333684EA7 /* DailyPomsWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CE0649BFE62D55036AEF38 /* Build configuration list for PBXNativeTarget "DailyPomsWidget" */;
+			buildPhases = (
+				26EAF0A8CD23F82945901F01 /* Sources */,
+				9D4ACD3B47C9894DBCDBDFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyPomsWidget;
+			packageProductDependencies = (
+			);
+			productName = DailyPomsWidget;
+			productReference = 6227E04957857384B0A48585 /* DailyPomsWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BEC7F5BAE60CD84BB64E8E10 /* DailyPomsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD6C7E74F961939BA71E8A8 /* Build configuration list for PBXNativeTarget "DailyPomsUITests" */;
+			buildPhases = (
+				81740A7676E0366CB9AC04A8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B0FEF907E764F8428F45503 /* PBXTargetDependency */,
+			);
+			name = DailyPomsUITests;
+			packageProductDependencies = (
+			);
+			productName = DailyPomsUITests;
+			productReference = 19B35C3FDB40127AB6BAD99F /* DailyPomsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F931E0F2165936A35300164B /* DailyPoms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055E850BE6C01BD0BFC127A0 /* Build configuration list for PBXNativeTarget "DailyPoms" */;
+			buildPhases = (
+				70894CA5A9298E35D70D9B06 /* Sources */,
+				0C8FE6B77BC6B713F7DF09E3 /* Resources */,
+				2F6F144575F5D08D8600B299 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F0BB1B901E4687443CA2CC /* PBXTargetDependency */,
+			);
+			name = DailyPoms;
+			packageProductDependencies = (
+			);
+			productName = DailyPoms;
+			productReference = 31F70D50736478C5136A56F2 /* DailyPoms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0E75E1DBC76EF5E018AD77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					9ED9B55A9B9433852004DA60 = {
+						DevelopmentTeam = 2M4VG8MVWW;
+						ProvisioningStyle = Automatic;
+					};
+					B293BAA42DEAF5B333684EA7 = {
+						DevelopmentTeam = 2M4VG8MVWW;
+						ProvisioningStyle = Automatic;
+					};
+					BEC7F5BAE60CD84BB64E8E10 = {
+						DevelopmentTeam = 2M4VG8MVWW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F931E0F2165936A35300164B;
+					};
+					F931E0F2165936A35300164B = {
+						DevelopmentTeam = 2M4VG8MVWW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0B143E69D97FA997038E750B /* Build configuration list for PBXProject "DailyPoms" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1E81187F701C0255FF9BD5D9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DD204A0D1AD70E0596724BE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F931E0F2165936A35300164B /* DailyPoms */,
+				B293BAA42DEAF5B333684EA7 /* DailyPomsWidget */,
+				9ED9B55A9B9433852004DA60 /* DailyPomsTests */,
+				BEC7F5BAE60CD84BB64E8E10 /* DailyPomsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C8FE6B77BC6B713F7DF09E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B5A1E21038B28209F7495D /* Assets.xcassets in Resources */,
+				4325D47FCB2E7CC5F7987088 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4ACD3B47C9894DBCDBDFA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E406EB997CDBE46FE97CD57F /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EAF0A8CD23F82945901F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1739F4ECF8E165A3E7A78D /* DailyPomsWidget.swift in Sources */,
+				ACA35F81DF680AEA67B0A733 /* TodaySnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70894CA5A9298E35D70D9B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E015C4C0789AAA0E64FE432B /* AppLinks.swift in Sources */,
+				735BD4D6913E18B2AEA13278 /* ContentView.swift in Sources */,
+				387056EC1C7228C1C6C43A5C /* DailyPomsApp.swift in Sources */,
+				70C42B3A1E39ED07A7D65381 /* HistoryView.swift in Sources */,
+				4F11C6D9B4AFA1838C3E3C37 /* Models.swift in Sources */,
+				779B9C37374897D29AD93384 /* Notifications.swift in Sources */,
+				48D3D3E6C55D67D05D9E10CA /* SettingsView.swift in Sources */,
+				40487022DBA7B2A0FE8CB7E0 /* SharedStore.swift in Sources */,
+				53A6D20CF7ED0427D428EBED /* Stats.swift in Sources */,
+				CB9F5E0FC5A7593C6BDA0CAD /* TodaySnapshot.swift in Sources */,
+				C5CAA1CB3493FA6BBD093DC5 /* TodayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81740A7676E0366CB9AC04A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2AC833FD13D3B36E8AF132 /* TabSwipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD1AB9D0B9ED34A659B4818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA152CBBE42E26793AD75AAF /* SnapshotRolloverTests.swift in Sources */,
+				AEB8ABDC6C63B7644FA0036A /* StatsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F0BB1B901E4687443CA2CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B293BAA42DEAF5B333684EA7 /* DailyPomsWidget */;
+			targetProxy = DB0F67873CDA02B939C3843A /* PBXContainerItemProxy */;
+		};
+		1B0FEF907E764F8428F45503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F931E0F2165936A35300164B /* DailyPoms */;
+			targetProxy = 4126FE563C09BA2F09D75B19 /* PBXContainerItemProxy */;
+		};
+		6D664BFE7E9CCDCDE402BF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F931E0F2165936A35300164B /* DailyPoms */;
+			targetProxy = 41F7130BC507BF84AC2BFF4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28649C6BB34566FFB90396D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyPoms/DailyPoms.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyPoms/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Poms";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		501F44FDD07AB70508B60DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2M4VG8MVWW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5E3C5F680D1ECBF9AE83E7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = DailyPoms;
+			};
+			name = Release;
+		};
+		64C812B19B4FD94A531EC686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DailyPomsWidget/DailyPomsWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyPomsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Poms";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		69F1D92F9D6BA8B3C181D7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyPoms.app/DailyPoms";
+			};
+			name = Release;
+		};
+		6AFF987DF7902C10D954402D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2M4VG8MVWW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		90EBBC444A55B6BF21A9450D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyPoms.app/DailyPoms";
+			};
+			name = Debug;
+		};
+		BBC1A9D08C2DE4CBA9C5E159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = DailyPoms;
+			};
+			name = Debug;
+		};
+		D2EF44C6FD53B4D308A2E48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DailyPomsWidget/DailyPomsWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyPomsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Poms";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E0AE1FA7CC82BC0D8ABD9918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyPoms/DailyPoms.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyPoms/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Poms";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrainik.dailypoms;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055E850BE6C01BD0BFC127A0 /* Build configuration list for PBXNativeTarget "DailyPoms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AE1FA7CC82BC0D8ABD9918 /* Debug */,
+				28649C6BB34566FFB90396D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0B143E69D97FA997038E750B /* Build configuration list for PBXProject "DailyPoms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501F44FDD07AB70508B60DC3 /* Debug */,
+				6AFF987DF7902C10D954402D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DD6C7E74F961939BA71E8A8 /* Build configuration list for PBXNativeTarget "DailyPomsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC1A9D08C2DE4CBA9C5E159 /* Debug */,
+				5E3C5F680D1ECBF9AE83E7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		46CE0649BFE62D55036AEF38 /* Build configuration list for PBXNativeTarget "DailyPomsWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EF44C6FD53B4D308A2E48B /* Debug */,
+				64C812B19B4FD94A531EC686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85518622A7528ADE0868EE68 /* Build configuration list for PBXNativeTarget "DailyPomsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90EBBC444A55B6BF21A9450D /* Debug */,
+				69F1D92F9D6BA8B3C181D7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0E75E1DBC76EF5E018AD77B /* Project object */;
+}

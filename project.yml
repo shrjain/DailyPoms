@@ -1,0 +1,118 @@
+name: DailyPoms
+options:
+  bundleIdPrefix: com.shrainik
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+attributes:
+  LastUpgradeCheck: "2630"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: Apple Development
+    # Personal Team today; replace with the paid-program Team ID after
+    # Apple Developer Program enrollment, before archiving for upload.
+    DEVELOPMENT_TEAM: 2M4VG8MVWW
+    TARGETED_DEVICE_FAMILY: "1"
+    DEAD_CODE_STRIPPING: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    STRING_CATALOG_GENERATE_SYMBOLS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+targets:
+  DailyPoms:
+    type: application
+    platform: iOS
+    sources:
+      - path: DailyPoms
+      - path: Shared
+    entitlements:
+      path: DailyPoms/DailyPoms.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.shrainik.dailypoms
+    info:
+      path: DailyPoms/Info.plist
+      properties:
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+          UIImageName: LaunchGlyph
+          UIImageRespectsSafeAreaInsets: true
+    dependencies:
+      - target: DailyPomsWidget
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shrainik.dailypoms
+        CODE_SIGN_IDENTITY: Apple Development
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Daily Poms
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+  DailyPomsWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: DailyPomsWidget
+      - path: Shared
+    entitlements:
+      path: DailyPomsWidget/DailyPomsWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.shrainik.dailypoms
+    info:
+      path: DailyPomsWidget/Info.plist
+      properties:
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shrainik.dailypoms.widget
+        CODE_SIGN_IDENTITY: Apple Development
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Daily Poms
+  DailyPomsTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: DailyPomsTests
+    dependencies:
+      - target: DailyPoms
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shrainik.dailypoms.tests
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+  DailyPomsUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: DailyPomsUITests
+    dependencies:
+      - target: DailyPoms
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shrainik.dailypoms.uitests
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  DailyPoms:
+    build:
+      targets:
+        DailyPoms: all
+        DailyPomsTests: [test]
+        DailyPomsUITests: [test]
+    test:
+      targets:
+        - DailyPomsTests
+        - DailyPomsUITests
